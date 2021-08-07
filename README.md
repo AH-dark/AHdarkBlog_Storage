@@ -21,4 +21,4 @@ For specific use, please consult [AHdark](https://ahdark.com/contact)
 
 #### **If you think the code has a little bit good, just a Star please, thanks!**
 
-> AHdark majors in back-end development, the front-end is really a batch of dishes
+> AHdark majors in back-end development, His front-end development ability is really a batch of dishes.
