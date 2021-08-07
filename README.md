@@ -5,3 +5,20 @@
 In order to show it better, I developed a set of static sites for it and placed it on its homepage.
 
 This static page uses **React**, **React-DOM**, **Material-UI**
+
+You can check the effect at <cdn.ahdark.com>
+
+## Configuration
+
+Please check ```/src/config.jsx``` for basic configuration
+
+> I suggest you to modify the source code after Fork instead of the simple configuration file.
+
+## Content
+
+For specific use, please consult [AHdark](https://ahdark.com/contact)
+
+
+#### **If you think the code has a little bit good, just a Star please, thanks!**
+
+> AHdark majors in back-end development, the front-end is really a batch of dishes
