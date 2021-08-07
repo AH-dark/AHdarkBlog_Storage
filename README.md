@@ -6,7 +6,7 @@ In order to show it better, I developed a set of static sites for it and placed 
 
 This static page uses **React**, **React-DOM**, **Material-UI**
 
-You can check the effect at <cdn.ahdark.com>
+You can check the effect at <https://cdn.ahdark.com>
 
 ## Configuration
 
