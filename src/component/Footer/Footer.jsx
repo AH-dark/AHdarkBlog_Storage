@@ -68,7 +68,7 @@ export default function Footer() {
                         {"."}
                     </Typography>
                     {Beian != false && (
-                        <Typography component="div" variant="body2">
+                        <Typography component="div" variant="body2" marginTop={5}>
                             {"备案号："}
                             <Link
                                 href="https://beian.miit.gov.cn"
