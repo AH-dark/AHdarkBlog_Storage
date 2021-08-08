@@ -2,25 +2,25 @@
  * @name 运营者昵称
  * @var string
  */
-export const UserName = "AHdark";
+export const UserName = "";
 
 /**
  * @name 运营者邮箱
  * @var email
  */
-export const UserEmail = "ssnight_0325ahlw@yeah.net";
+export const UserEmail = "";
 
 /**
  * @name 博客URL
  * @var string
  */
-export const BlogURL = "https://ahdark.com";
+export const BlogURL = "";
 
 /**
  * @name 站点名
  * @var string
  */
-export const SiteName = "AHdark Blog Storage";
+export const SiteName = "";
 
 /**
  * @name 运营者博客
@@ -30,13 +30,13 @@ export const SiteName = "AHdark Blog Storage";
  * @param Content 联系方式
  */
 export const Blog = {
-    Name: "AHdark Blog",
+    Name: "",
     Url: BlogURL,
-    Content: "https://ahdark.com/contact",
-    Describe: "一个搞技术的小蒟蒻"
+    Content: "",
+    Describe: ""
 }
 
 export const GitHub = {
-    UserName: "AH-dark",
-    RepoName: "AHdarkBlog_Storage"
+    UserName: "",
+    RepoName: ""
 }

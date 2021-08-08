@@ -10,21 +10,21 @@ export default class Gitalk {
      * 是否使用Gitalk
      * @var bool
      */
-    use = true;
+    use = false;
 
     /**
      * **必须**
      * GitHub Application Client ID.
      * @var string
      */
-    ClientID = "d483193dc958bfd69c21";
+    ClientID = "";
 
     /**
      * **必须**
      * GitHub Application Client Secret.
      * @var string
      */
-    ClientSecret = "9b3d87e0f1ce993e21b6783c0c64a1705e74a89e";
+    ClientSecret = "";
 
     /**
      * **必须**
