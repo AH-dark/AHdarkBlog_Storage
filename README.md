@@ -10,7 +10,8 @@ You can check the effect at <https://cdn.ahdark.com>
 
 ## Configuration
 
-Please check ```/src/config.jsx``` for basic configuration
+ * Please check ```/src/config.jsx``` for basic configuration
+ * Please check ```/src/gitalk.config.jsx``` for Gitalk Module configuration   
 
 > I suggest you to modify the source code after Fork instead of the simple configuration file.
 
