@@ -2,6 +2,7 @@ import React from "react";
 import GitalkComponent from "gitalk/dist/gitalk-component";
 import { makeStyles } from "@material-ui/styles";
 import Gitalk from "../../gitalk.config";
+import 'gitalk/dist/gitalk.css'
 import { Box, Paper } from "@material-ui/core";
 
 const useStyles = makeStyles((theme) => ({
@@ -9,7 +10,9 @@ const useStyles = makeStyles((theme) => ({
 
     },
     gitalk: {
-        padding: 5
+        padding: 5,
+        margin: 15,
+        textAlign: "unset"
     }
 }));
 
