@@ -23,6 +23,13 @@ export const BlogURL = "https://ahdark.com";
 export const SiteName = "AHdark Blog Storage";
 
 /**
+ * @name 备案号 可选
+ * @var string
+ * 输入false则不显示
+ */
+export const Beian = "京ICP备2021024539号";
+
+/**
  * @name 运营者博客
  * @var object
  * @param Name 运营者姓名
