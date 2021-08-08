@@ -5,6 +5,12 @@
 export const UserName = "AHdark";
 
 /**
+ * @name 运营者邮箱
+ * @var email
+ */
+export const UserEmail = "ssnight_0325ahlw@yeah.net";
+
+/**
  * @name 博客URL
  * @var string
  */
@@ -28,4 +34,9 @@ export const Blog = {
     Url: BlogURL,
     Content: "https://ahdark.com/contact",
     Describe: "一个搞技术的小蒟蒻"
+}
+
+export const GitHub = {
+    UserName: "AH-dark",
+    RepoName: "AHdarkBlog_Storage"
 }
