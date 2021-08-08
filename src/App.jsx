@@ -10,7 +10,7 @@ const useStyles = makeStyles((theme) => ({
     root: {
         display: "flex",
         flexDirection: "column",
-        margin: "5% 10px 5% 10px",
+        margin: "3% 10px 10px 10px",
         position: "static",
     }
 }))

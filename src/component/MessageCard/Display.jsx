@@ -12,7 +12,7 @@ const useStyles = makeStyles((theme) => ({
         backgroundColor: "#FFFFFF",
         maxHeight: "60%",
         minHeight: "450px",
-        marginTop: "10%",
+        marginTop: "5%",
         borderRadius: "0.3rem",
         justifyContent: "space-evenly"
     }

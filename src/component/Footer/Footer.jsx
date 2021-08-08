@@ -8,7 +8,15 @@ import Comment from "./Comment";
 const useStyles = makeStyles((theme) => ({
     root: {
         paddingTop: 10,
-        textAlign: "center"
+        textAlign: "center",
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "stretch",
+        paddingLeft: 0,
+        paddingRight: 0
+    },
+    copyright: {
+        marginTop: 10
     }
 }))
 
@@ -43,7 +51,7 @@ export default function Footer() {
                 {myGitalk.use && (
                     <Comment />
                 )}
-                <Box component="div">
+                <Box component="div" className={classes.copyright}>
                     <Typography component="div" variant="body2">
                         {CopyRight}
                     </Typography>
