@@ -12,7 +12,7 @@ const useStyles = makeStyles((theme) => ({
     gitalk: {
         padding: 5,
         margin: 15,
-        textAlign: "unset"
+        textAlign: "left"
     }
 }));
 
