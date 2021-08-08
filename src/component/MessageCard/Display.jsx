@@ -1,9 +1,9 @@
-import React from "react";
+import { Hidden, Paper } from "@material-ui/core";
 import { makeStyles } from "@material-ui/styles";
-import { Paper, Hidden } from "@material-ui/core";
-import Title from "./Title";
-import Content from "./Content";
+import React from "react";
 import Card from "./Card/Card";
+import Content from "./Content";
+import Title from "./Title";
 
 const useStyles = makeStyles((theme) => ({
     Paper: {

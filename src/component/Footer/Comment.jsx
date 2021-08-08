@@ -1,9 +1,9 @@
-import React from "react";
-import GitalkComponent from "gitalk/dist/gitalk-component";
-import { makeStyles } from "@material-ui/styles";
-import Gitalk from "../../gitalk.config";
-import 'gitalk/dist/gitalk.css'
 import { Box, Paper } from "@material-ui/core";
+import { makeStyles } from "@material-ui/styles";
+import GitalkComponent from "gitalk/dist/gitalk-component";
+import 'gitalk/dist/gitalk.css';
+import React from "react";
+import Gitalk from "../../gitalk.config";
 
 const useStyles = makeStyles((theme) => ({
     root: {
