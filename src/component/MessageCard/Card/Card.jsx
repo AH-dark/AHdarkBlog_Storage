@@ -68,7 +68,7 @@ export default function UserCard() {
             <Hidden xsDown>
                 <CardMedia
                     className={classes.cover}
-                    image="/logo512.png"
+                    image="/page/static/image/logo512.png"
                     title="Avatar"
                     id="card-logo"
                 />
