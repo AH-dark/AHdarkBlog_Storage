@@ -24,7 +24,15 @@ export default function Content() {
     return (
         <Box component="span" className={classes.content} Name="content">
             <Typography variant="body1" component="p" className={classes.p}>
-                {"这是 "}
+                {"This is a storage site which build by "}
+                <Link
+                    href={Blog.Url}
+                    onClick={() => Open(Blog.Url)}
+                    className={classes.link}
+                >
+                    {UserName}
+                </Link>
+                {" and used by "}
                 <Link
                     href={Blog.Url}
                     onClick={() => Open(Blog.Url)}
@@ -32,10 +40,10 @@ export default function Content() {
                 >
                     {Blog.Name}
                 </Link>
-                {" 的存储站点"}
+                {"."}
             </Typography>
             <Typography variant="body1" component="p" className={classes.p}>
-                {"所有文件皆为 "}
+                {"All of files were uploaded on "}
                 <Link
                     href={Blog.Url}
                     onClick={() => Open(Blog.Url)}
@@ -43,10 +51,10 @@ export default function Content() {
                 >
                     {Blog.Name}
                 </Link>
-                {" 管理员上传"}
+                {" by manager & writer."}
             </Typography>
             <Typography variant="body1" component="p" className={classes.p}>
-                {"如有问题请联系 "}
+                {"If you have any questions, please contact "}
                 <Link
                     href={Blog.Content}
                     onClick={() => Open(Blog.Content)}
@@ -54,6 +62,7 @@ export default function Content() {
                 >
                     {UserName}
                 </Link>
+                {"."}
             </Typography>
         </Box>
     )

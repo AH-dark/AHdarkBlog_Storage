@@ -1,15 +1,19 @@
-import { Button, Card, CardContent, CardMedia, Typography, Box } from "@material-ui/core";
+import { Button, Card, CardContent, CardMedia, Typography, Box, Hidden, createTheme } from "@material-ui/core";
 import { makeStyles } from "@material-ui/styles";
 import React from "react";
 import { Blog, UserName } from "../../../config";
 import ContactlessRoundedIcon from '@material-ui/icons/ContactlessRounded';
 import DescriptionRoundedIcon from '@material-ui/icons/DescriptionRounded';
-import "./Card.css";
 
 const useStyles = makeStyles((theme) => ({
     root: {
         display: 'flex',
-        height: 150,
+        [theme.breakpoints.down('sm')]: {
+            height: 50,
+        },
+        [theme.breakpoints.up('sm')]: {
+            height: 150,
+        },
         margin: '15px 1rem 5px 1rem',
         flexDirection: "row",
         justifyContent: "space-between",
@@ -56,26 +60,30 @@ const useStyles = makeStyles((theme) => ({
     }
 }));
 
-export default function () {
+export default function UserCard() {
     const classes = useStyles();
 
     return (
         <Card className={classes.root} id="card-root">
-            <CardMedia
-                className={classes.cover}
-                image="/logo512.png"
-                title="Live from space album cover"
-                id="card-logo"
-            />
+            <Hidden xsDown>
+                <CardMedia
+                    className={classes.cover}
+                    image="/logo512.png"
+                    title="Avatar"
+                    id="card-logo"
+                />
+            </Hidden>
             <Box className={classes.details}>
-                <CardContent className={classes.content} id="card-content">
-                    <Typography component="h3" variant="h4">
-                        {UserName}
-                    </Typography>
-                    <Typography component="span" variant="subtitle1">
-                        {Blog.Describe}
-                    </Typography>
-                </CardContent>
+                <Hidden xsDown>
+                    <CardContent className={classes.content} id="card-content">
+                        <Typography component="h3" variant="h4">
+                            {UserName}
+                        </Typography>
+                        <Typography component="span" variant="subtitle1">
+                            {Blog.Describe}
+                        </Typography>
+                    </CardContent>
+                </Hidden>
                 <Box className={classes.buttonBox}>
                     <Button
                         size="small"
@@ -86,7 +94,7 @@ export default function () {
                     >
                         <ContactlessRoundedIcon />
                         <Box className={classes.text}>
-                            {"联系"}
+                            {"Contact"}
                         </Box>
                     </Button>
                     <Button
@@ -98,7 +106,7 @@ export default function () {
                     >
                         <DescriptionRoundedIcon />
                         <Box className={classes.text}>
-                            {"前往博客"}
+                            {"Go Blog"}
                         </Box>
                     </Button>
                 </Box>
