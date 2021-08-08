@@ -1,7 +1,9 @@
-import { Box, Container, CssBaseline, Divider, Link, Typography } from "@material-ui/core";
+import { Box, Container, Link, Typography } from "@material-ui/core";
 import { makeStyles } from "@material-ui/styles";
 import moment from "moment";
 import React from "react";
+import Gitalk from "../../gitalk.config";
+import Comment from "./Comment";
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -17,7 +19,7 @@ export default function Footer() {
     const CopyRight = (
         <>
             {"Copyright © 2021"}
-            {(Year != 2021) ? ("-" + Year) : null}
+            {(Year !== 2021) ? ("-" + Year) : null}
             {" "}
             <Link
                 href="https://ahdark.com"
@@ -30,12 +32,17 @@ export default function Footer() {
         </>
     )
 
+    const myGitalk = new Gitalk();
+
     return (
         <>
             <Container
                 component="footer"
                 className={classes.root}
             >
+                {myGitalk.use && (
+                    <Comment />
+                )}
                 <Box component="div">
                     <Typography component="div" variant="body2">
                         {CopyRight}
