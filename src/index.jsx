@@ -1,12 +1,16 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import APP from "./App";
-import { CssBaseline } from '@material-ui/core';
+import { createTheme, CssBaseline, ThemeProvider } from '@material-ui/core';
+
+const theme = createTheme();
 
 ReactDOM.render(
     <React.Fragment>
-        <CssBaseline />
-        <APP />
+        <ThemeProvider theme={theme}>
+            <CssBaseline />
+            <APP />
+        </ThemeProvider>
     </React.Fragment>,
     document.getElementById('root')
 )
