@@ -18,7 +18,7 @@ const useStyles = makeStyles((theme) => ({
     }
 }))
 
-export default function () {
+export default function Display() {
     const classes = useStyles();
     return (
         <Paper elevation={1} className={classes.Paper}>

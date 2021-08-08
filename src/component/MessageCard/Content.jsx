@@ -18,7 +18,7 @@ const Open = (link) => function () {
     return window.open(link, "_self");
 }
 
-export default function () {
+export default function Content() {
     const classes = useStyles();
 
     return (

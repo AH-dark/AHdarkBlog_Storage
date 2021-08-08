@@ -10,7 +10,7 @@ const useStyles = makeStyles((theme) => ({
     }
 }))
 
-export default function () {
+export default function Title() {
     const classes = useStyles();
 
     return (
