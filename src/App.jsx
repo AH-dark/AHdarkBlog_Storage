@@ -3,9 +3,11 @@ import { makeStyles } from "@material-ui/styles";
 import React from "react";
 import MessageCard from "./component/MessageCard/Display";
 import AppBar from "./component/AppBar/AppBar";
+import FooterContent from "./component/Footer/Footer";
+import "@fontsource/roboto";
 
 const useStyles = makeStyles((theme) => ({
-    Root: {
+    root: {
         display: "flex",
         flexDirection: "column",
         margin: "5% 10px 5% 10px",
@@ -21,9 +23,10 @@ export default function App() {
             <AppBar />
             <CssBaseline />
             <Box component="main" display="Block">
-                <Box component="div" className={classes.Root}>
+                <Box component="div" className={classes.root}>
                     <Container maxWidth="sm">
                         <MessageCard />
+                        <FooterContent />
                     </Container>
                 </Box>
             </Box>
