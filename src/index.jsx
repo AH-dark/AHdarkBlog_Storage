@@ -1,7 +1,7 @@
+import { createTheme, CssBaseline, ThemeProvider } from '@material-ui/core';
 import React from "react";
 import ReactDOM from "react-dom";
 import APP from "./App";
-import { createTheme, CssBaseline, ThemeProvider } from '@material-ui/core';
 
 const theme = createTheme();
 

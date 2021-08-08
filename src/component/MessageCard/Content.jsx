@@ -2,7 +2,7 @@ import "@fontsource/roboto";
 import { Box, Link, Typography } from "@material-ui/core";
 import { makeStyles } from "@material-ui/styles";
 import React from "react";
-import { UserName, Blog } from "../../config";
+import { Blog, UserName } from "../../config";
 
 const useStyles = makeStyles((theme) => ({
     content: {

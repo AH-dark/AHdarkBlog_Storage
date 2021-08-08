@@ -7,9 +7,9 @@ import {
     Paper,
     Typography
 } from "@material-ui/core";
+import DescriptionRoundedIcon from '@material-ui/icons/DescriptionRounded';
 import GitHubIcon from "@material-ui/icons/GitHub";
 import MailRoundedIcon from '@material-ui/icons/MailRounded';
-import DescriptionRoundedIcon from '@material-ui/icons/DescriptionRounded';
 import React from "react";
 import { BlogURL, GitHub, UserEmail } from "../../config";
 

@@ -1,10 +1,10 @@
+import "@fontsource/roboto";
 import { Box, Container, CssBaseline } from "@material-ui/core";
 import { makeStyles } from "@material-ui/styles";
 import React from "react";
-import MessageCard from "./component/MessageCard/Display";
 import AppBar from "./component/AppBar/AppBar";
 import FooterContent from "./component/Footer/Footer";
-import "@fontsource/roboto";
+import MessageCard from "./component/MessageCard/Display";
 
 const useStyles = makeStyles((theme) => ({
     root: {

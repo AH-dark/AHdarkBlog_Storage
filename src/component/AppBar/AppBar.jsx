@@ -1,13 +1,7 @@
 import {
-    AppBar,
-    CssBaseline,
-    IconButton,
+    AppBar, Collapse, CssBaseline, Hidden, IconButton,
     makeStyles,
-    Toolbar,
-    Typography,
-    Hidden,
-    Collapse,
-    Tooltip
+    Toolbar, Tooltip, Typography
 } from "@material-ui/core";
 import GitHubIcon from '@material-ui/icons/GitHub';
 import MenuIcon from "@material-ui/icons/Menu";
