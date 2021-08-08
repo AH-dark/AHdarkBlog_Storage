@@ -2,6 +2,7 @@ import { Box, Container, Link, Typography } from "@material-ui/core";
 import { makeStyles } from "@material-ui/styles";
 import moment from "moment";
 import React from "react";
+import { Beian } from "../../config";
 import Gitalk from "../../gitalk.config";
 import Comment from "./Comment";
 
@@ -66,6 +67,17 @@ export default function Footer() {
                         </Link>
                         {"."}
                     </Typography>
+                    {Beian != false && (
+                        <Typography component="div" variant="body2" marginTop={5}>
+                            {"备案号："}
+                            <Link
+                                href="https://beian.miit.gov.cn"
+                                target="_blank"
+                            >
+                                {Beian}
+                            </Link>
+                        </Typography>
+                    )}
                 </Box>
             </Container>
         </>

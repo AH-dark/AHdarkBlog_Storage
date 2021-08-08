@@ -23,6 +23,14 @@ export const BlogURL = "";
 export const SiteName = "";
 
 /**
+ * @name 备案号 可选
+ * @var string
+ * 不显示请填写false
+ */
+export const Beian = false;
+//export const Beian = "京ICP备1000000001号"
+
+/**
  * @name 运营者博客
  * @var object
  * @param Name 运营者姓名
