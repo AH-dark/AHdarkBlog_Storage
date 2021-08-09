@@ -2,13 +2,11 @@ import { Box, Container, Link, Typography } from "@material-ui/core";
 import { makeStyles } from "@material-ui/styles";
 import moment from "moment";
 import React from "react";
-import { Beian } from "../../config";
 import Gitalk from "../../gitalk.config";
-import Comment from "./Comment";
 
 const useStyles = makeStyles((theme) => ({
     root: {
-        paddingTop: 10,
+        paddingTop: 5,
         textAlign: "center",
         display: "flex",
         flexDirection: "column",

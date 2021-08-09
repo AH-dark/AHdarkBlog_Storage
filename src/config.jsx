@@ -27,7 +27,23 @@ export const SiteName = "AHdark Blog Storage";
  * @var string
  * 输入false则不显示
  */
-export const Beian = "京ICP备2021024539号";
+export const Beian = "京ICP备 2021024539号";
+// export const Beian = false;
+
+/**
+ * @name 公安备案 可选
+ * @var string
+ * 输入false则不显示
+ * @param Num string 网安备案代码
+ * @param Link string 网安备案指向查询链接
+ * @param Img bool 是否显示公安图标
+ */
+// export const WangAn = {
+//     Num: "皖公网安备 34022302000216号",
+//     Link: "https://www.beian.gov.cn/portal/registerSystemInfo?recordcode=34022302000216"
+//     Img: true
+// }
+export const WangAn = false;
 
 /**
  * @name 运营者博客
