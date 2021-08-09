@@ -1,4 +1,10 @@
 /**
+ * @name Debug开关
+ * @var bool
+ */
+export const Debug = true;
+
+/**
  * @name 运营者昵称
  * @var string
  */

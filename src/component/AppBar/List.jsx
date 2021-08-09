@@ -1,17 +1,21 @@
 import "@fontsource/roboto";
 import {
-    Box, IconButton,
+    Box,
+    Divider,
     List,
     ListItem,
+    ListItemIcon,
     makeStyles,
     Paper,
     Typography
 } from "@material-ui/core";
 import DescriptionRoundedIcon from '@material-ui/icons/DescriptionRounded';
 import GitHubIcon from "@material-ui/icons/GitHub";
-import MailRoundedIcon from '@material-ui/icons/MailRounded';
+import HomeRoundedIcon from '@material-ui/icons/HomeRounded';
+import QuestionAnswerRoundedIcon from '@material-ui/icons/QuestionAnswerRounded';
 import React from "react";
-import { BlogURL, GitHub, UserEmail } from "../../config";
+import { useHistory } from "react-router-dom";
+import { BlogURL, GitHub } from "../../config";
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -49,8 +53,7 @@ const useStyles = makeStyles((theme) => ({
         },
     },
     iconBotton: {
-        marginLeft: 16,
-        marginRight: theme.spacing(2)
+        marginLeft: theme.spacing(2)
     },
     Block: {
         minHeight: 64,
@@ -65,10 +68,6 @@ const useStyles = makeStyles((theme) => ({
     }
 }))
 
-const SendEmail = () => {
-    return window.open("mailto:" + UserEmail);
-}
-
 const GoGitHub = () => {
     return window.open("https://github.com/" + GitHub.UserName);
 }
@@ -79,6 +78,7 @@ const GoBlog = () => {
 
 export default function ListBar() {
     const classes = useStyles();
+    let history = useHistory();
 
     return (
         <>
@@ -91,11 +91,43 @@ export default function ListBar() {
                     <ListItem
                         button
                         className={classes.ListItem}
+                        onClick={() => history.push("/?")}
+                    >
+                        <ListItemIcon className={classes.iconBotton}>
+                            <HomeRoundedIcon />
+                        </ListItemIcon>
+                        <Box component="div" className={classes.ButtonTextDiv}>
+                            <Typography component="span" variant="body1" className={classes.ButtonText} display="Block">
+                                {"Home"}
+                            </Typography>
+                        </Box>
+                    </ListItem>
+
+                    <ListItem
+                        button
+                        className={classes.ListItem}
+                        onClick={() => history.push("/comment?")}
+                    >
+                        <ListItemIcon className={classes.iconBotton}>
+                            <QuestionAnswerRoundedIcon />
+                        </ListItemIcon>
+                        <Box component="div" className={classes.ButtonTextDiv}>
+                            <Typography component="span" variant="body1" className={classes.ButtonText} display="Block">
+                                {"Comment"}
+                            </Typography>
+                        </Box>
+                    </ListItem>
+
+                    <Divider />
+
+                    <ListItem
+                        button
+                        className={classes.ListItem}
                         onClick={GoBlog}
                     >
-                        <IconButton className={classes.iconBotton}>
+                        <ListItemIcon className={classes.iconBotton}>
                             <DescriptionRoundedIcon />
-                        </IconButton>
+                        </ListItemIcon>
                         <Box component="div" className={classes.ButtonTextDiv}>
                             <Typography component="span" variant="body1" className={classes.ButtonText} display="Block">
                                 {"Blog"}
@@ -108,27 +140,12 @@ export default function ListBar() {
                         className={classes.ListItem}
                         onClick={GoGitHub}
                     >
-                        <IconButton className={classes.iconBotton}>
+                        <ListItemIcon className={classes.iconBotton}>
                             <GitHubIcon />
-                        </IconButton>
+                        </ListItemIcon>
                         <Box component="div" className={classes.ButtonTextDiv}>
                             <Typography component="span" variant="body1" className={classes.ButtonText} display="Block">
                                 {"GitHub Account"}
-                            </Typography>
-                        </Box>
-                    </ListItem>
-
-                    <ListItem
-                        button
-                        className={classes.ListItem}
-                        onClick={SendEmail}
-                    >
-                        <IconButton className={classes.iconBotton}>
-                            <MailRoundedIcon />
-                        </IconButton>
-                        <Box component="div" className={classes.ButtonTextDiv}>
-                            <Typography component="span" variant="body1" className={classes.ButtonText} display="Block">
-                                {"Send Mail"}
                             </Typography>
                         </Box>
                     </ListItem>

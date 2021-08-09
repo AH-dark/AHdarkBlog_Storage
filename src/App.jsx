@@ -11,10 +11,11 @@ import {
     Route,
     Switch
 } from "react-router-dom";
-import AppBar from "./component/AppBar/AppBar";
+import AppBar from "./component/AppBar";
 import Beian from "./component/Beian";
 import FooterContent from "./component/Footer";
-import MessageCard from "./component/MessageCard/Display";
+import MessageCard from "./component/MessageCard";
+import Comment from "./component/Comment";
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -32,7 +33,7 @@ export default function App() {
         <Router>
             <AppBar />
             <CssBaseline />
-            <Box component="main" display="Block">
+            <Box component="main" display="block">
                 <Box component="div" className={classes.root}>
                     <Container maxWidth="sm">
                         <Switch>
@@ -51,9 +52,9 @@ export default function App() {
                                 </>
                             </Route>
 
-                            <Route path="comment">
+                            <Route path="/comment">
                                 <>
-
+                                    <Comment name={window.location.hostname + "/commentpage"} />
                                 </>
                             </Route>
 

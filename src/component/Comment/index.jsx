@@ -7,7 +7,15 @@ import Gitalk from "../../gitalk.config";
 
 const useStyles = makeStyles((theme) => ({
     root: {
-
+    },
+    display: {
+        display: "flex",
+        flexDirection: "column",
+        backgroundColor: "#FFFFFF",
+        minHeight: "450px",
+        marginTop: "5%",
+        borderRadius: "0.3rem",
+        justifyContent: "space-evenly"
     },
     gitalk: {
         padding: 5,
@@ -16,14 +24,14 @@ const useStyles = makeStyles((theme) => ({
     }
 }));
 
-export default function Comment() {
+export default function Comment(props) {
     const classes = useStyles();
     const myGitalk = new Gitalk();
-    myGitalk.id = "footer";
+    myGitalk.id = props.name;
 
     return (
         <Box className={classes.root}>
-            <Paper>
+            <Paper className={classes.display}>
                 <div className={classes.gitalk} id="Gitalk">
                     <GitalkComponent options={{
                         clientID: myGitalk.ClientID,

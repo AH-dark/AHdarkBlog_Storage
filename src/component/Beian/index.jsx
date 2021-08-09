@@ -6,7 +6,7 @@ import { Beian as BeianNumber, WangAn } from "../../config";
 const useStyles = makeStyles((theme) => ({
     root: {
         textAlign: "center",
-        display: "Block",
+        display: "block",
         marginTop: 7.5,
         marginBottom: 7.5
     },

@@ -7,7 +7,8 @@ import GitHubIcon from '@material-ui/icons/GitHub';
 import MenuIcon from "@material-ui/icons/Menu";
 import React, { useState } from "react";
 import { GitHub, SiteName } from "../../config";
-import ListBar from "./ListBar";
+import ListBar from "./List";
+import LightModify from "./DarkModeSwitcher";
 
 
 const useStyles = makeStyles((theme) => ({
@@ -76,6 +77,10 @@ export default function Bar() {
                     >
                         {SiteName}
                     </Typography>
+
+                    <CssBaseline />
+
+                    {/* <LightModify /> */}
 
                     <CssBaseline />
 

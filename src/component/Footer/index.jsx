@@ -2,7 +2,6 @@ import { Box, Container, Link, Typography } from "@material-ui/core";
 import { makeStyles } from "@material-ui/styles";
 import moment from "moment";
 import React from "react";
-import Gitalk from "../../gitalk.config";
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -38,8 +37,6 @@ export default function Footer() {
             {" All Right Reserved"}
         </>
     )
-
-    const myGitalk = new Gitalk();
 
     return (
         <>
