@@ -49,9 +49,9 @@ export default function Footer() {
                 component="footer"
                 className={classes.root}
             >
-                {myGitalk.use && (
+                {/* {myGitalk.use && (
                     <Comment />
-                )}
+                )} */}
                 <Box component="div" className={classes.copyright}>
                     <Typography component="div" variant="body2">
                         {CopyRight}
@@ -67,7 +67,7 @@ export default function Footer() {
                         </Link>
                         {"."}
                     </Typography>
-                    {Beian != false && (
+                    {/* {Beian != false && (
                         <Typography component="div" variant="body2" marginTop={5}>
                             {"备案号："}
                             <Link
@@ -77,7 +77,7 @@ export default function Footer() {
                                 {Beian}
                             </Link>
                         </Typography>
-                    )}
+                    )} */}
                 </Box>
             </Container>
         </>
