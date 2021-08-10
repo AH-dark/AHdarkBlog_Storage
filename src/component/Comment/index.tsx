@@ -5,8 +5,6 @@ import 'gitalk/dist/gitalk.css';
 import React                               from "react";
 import { Gitalk as GitalkConfig }          from "../../gitalk";
 import GitalkComponent                     from "gitalk/dist/gitalk-component";
-import { useSelector }                     from 'react-redux'
-import { RootState }                       from '../../store'
 
 
 const useStyles = makeStyles( ( theme: Theme ) => createStyles( {
