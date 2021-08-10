@@ -49,6 +49,7 @@
     },
     "homepage": "/page/",
     "devDependencies": {
+        "@material-ui/styles": "^4.11.4",
         "@types/react-dom": "^17.0.9",
         "@types/react-router": "^5.1.16"
     }

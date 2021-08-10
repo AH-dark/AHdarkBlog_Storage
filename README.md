@@ -1,5 +1,7 @@
 # AHdark Blog Storage
 
+**Thanks for the help and advice from @topjohncian, I was able to continue this project and add features.**
+
 [**AHdark Blog Storage**](https://cdn.ahdark.com) is a dedicated site for storing static files and attachments of [**
 AHdark Blog**](https://ahdark.com).
 
@@ -10,6 +12,8 @@ This static page uses **React**, **React-DOM**, **Material-UI**
 You can check the effect at <https://cdn.ahdark.com>
 
 ## Configuration
+
+**Please use the ```master``` branch**
 
 * Please check ```/src/config.tsx``` for basic configuration
 * Please check ```/src/gitalk.tsx``` for Gitalk Module configuration
