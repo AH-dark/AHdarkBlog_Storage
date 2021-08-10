@@ -1,13 +1,12 @@
-import { Box, Paper } from "@material-ui/core";
-import { makeStyles } from "@material-ui/styles";
+import {Box, Paper} from "@material-ui/core";
+import {makeStyles} from "@material-ui/styles";
 import GitalkComponent from "gitalk/dist/gitalk-component";
 import 'gitalk/dist/gitalk.css';
 import React from "react";
-import Gitalk from "../../gitalk.config";
+import Gitalk from "../../gitalk";
 
 const useStyles = makeStyles((theme) => ({
-    root: {
-    },
+    root: {},
     display: {
         display: "flex",
         flexDirection: "column",

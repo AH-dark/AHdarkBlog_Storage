@@ -1,35 +1,29 @@
 /**
- * @name Debug开关
- * @var bool
- */
-export const Debug = true;
-
-/**
- * @name 运营者昵称
+ * @description 运营者昵称
  * @var string
  */
 export const UserName = "AHdark";
 
 /**
- * @name 运营者邮箱
+ * @description 运营者邮箱
  * @var email
  */
 export const UserEmail = "ssnight_0325ahlw@yeah.net";
 
 /**
- * @name 博客URL
+ * @description 博客URL
  * @var string
  */
 export const BlogURL = "https://ahdark.com";
 
 /**
- * @name 站点名
+ * @description 站点名
  * @var string
  */
 export const SiteName = "AHdark Blog Storage";
 
 /**
- * @name 备案号 可选
+ * @description 备案号 可选
  * @var string
  * 输入false则不显示
  */
@@ -37,7 +31,7 @@ export const Beian = "京ICP备 2021024539号";
 // export const Beian = false;
 
 /**
- * @name 公安备案 可选
+ * @description 公安备案 可选
  * @var string
  * 输入false则不显示
  * @param Num string 网安备案代码
@@ -52,7 +46,7 @@ export const Beian = "京ICP备 2021024539号";
 export const WangAn = false;
 
 /**
- * @name 运营者博客
+ * @description 运营者博客
  * @var object
  * @param Name 运营者姓名
  * @param Url 博客地址

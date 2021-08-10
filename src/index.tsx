@@ -6,6 +6,7 @@ import {store} from "./store";
 
 ReactDOM.render(
     <Provider store={store}>
-            <APP /></Provider>,
+            <APP />
+    </Provider>,
     document.getElementById('root')
 )

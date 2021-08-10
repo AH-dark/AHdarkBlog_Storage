@@ -24,4 +24,9 @@ yarn-error.log*
 
 package-lock.json
 
+# release
 *.tar.gz
+
+# editor
+.vscode
+.idea
