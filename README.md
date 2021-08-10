@@ -1,6 +1,6 @@
 # AHdark Blog Storage
 
-**Thanks for the help and advice from @topjohncian, I was able to continue this project and add features.**
+**Thanks for the help and advice from [@topjohncian](https://github.com/topjohncian), I was able to continue this project and add features.**
 
 [**AHdark Blog Storage**](https://cdn.ahdark.com) is a dedicated site for storing static files and attachments of [**
 AHdark Blog**](https://ahdark.com).
