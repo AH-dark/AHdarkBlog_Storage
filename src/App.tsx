@@ -2,7 +2,7 @@ import "@fontsource/roboto";
 import { Box, Container, createStyles, createTheme, CssBaseline, Theme, ThemeProvider } from "@material-ui/core";
 import { makeStyles }                                                                   from "@material-ui/styles";
 import React, { useMemo }                                                               from "react";
-import { BrowserRouter as Router, Route, Switch }                                       from "react-router-dom";
+import { HashRouter as Router, Route, Switch }                                          from "react-router-dom";
 import AppBar                                                                           from "./component/AppBar";
 import Beian                                                                            from "./component/Beian";
 import FooterContent                                                                    from "./component/Footer";
@@ -24,12 +24,11 @@ export default function App () {
 	const classes = useStyles();
 	const themeOptions = useSelector( ( state: RootState ) => state.theme )
 	
-	const theme = useMemo(
+	const theme: Theme = useMemo(
 		() => createTheme( themeOptions ),
 		[ themeOptions ]
 	)
 	
-	// @ts-ignore
 	return (
 		<ThemeProvider theme={theme}>
 			<Router>

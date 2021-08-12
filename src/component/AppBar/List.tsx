@@ -1,15 +1,15 @@
 import "@fontsource/roboto";
 import {
-    Box,
-    createStyles,
-    Divider,
-    List,
-    ListItem,
-    ListItemIcon,
-    makeStyles,
-    Paper,
-    Theme,
-    Typography
+	Box,
+	createStyles,
+	Divider,
+	List,
+	ListItem,
+	ListItemIcon,
+	makeStyles,
+	Paper,
+	Theme,
+	Typography
 }                                from "@material-ui/core";
 import DescriptionRoundedIcon    from '@material-ui/icons/DescriptionRounded';
 import GitHubIcon                from "@material-ui/icons/GitHub";
@@ -73,14 +73,6 @@ const useStyles = makeStyles( ( theme: Theme ) => createStyles( {
 	}
 } ) )
 
-const GoGitHub = () => {
-	return window.open( "https://github.com/" + GitHub.UserName );
-}
-
-const GoBlog = () => {
-	return window.open( BlogURL );
-}
-
 export default function ListBar () {
 	const classes = useStyles();
 	let history = useHistory();
@@ -128,7 +120,10 @@ export default function ListBar () {
 					<ListItem
 						button
 						className={classes.ListItem}
-						onClick={GoBlog}
+						onClick={
+							() =>
+								window.open( BlogURL, "_blank" )
+						}
 					>
 						<ListItemIcon className={classes.iconBotton}>
 							<DescriptionRoundedIcon/>
@@ -143,7 +138,10 @@ export default function ListBar () {
 					<ListItem
 						button
 						className={classes.ListItem}
-						onClick={GoGitHub}
+						onClick={
+							() =>
+								window.open( "https://github.com/" + GitHub.UserName, "_blank" )
+						}
 					>
 						<ListItemIcon className={classes.iconBotton}>
 							<GitHubIcon/>

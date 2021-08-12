@@ -3,7 +3,7 @@ import { Box, createStyles, Paper, Theme } from "@material-ui/core";
 import { makeStyles }                      from "@material-ui/styles";
 import 'gitalk/dist/gitalk.css';
 import React                               from "react";
-import { Gitalk as GitalkConfig }          from "../../gitalk";
+import { Gitalk as GitalkConfig }          from "../../config/gitalk";
 import GitalkComponent                     from "gitalk/dist/gitalk-component";
 
 

@@ -38,8 +38,8 @@ const useStyles = makeStyles( ( theme: Theme ) => createStyles( {
 	Drawer: {
 		margin: theme.spacing( 1 )
 	},
-	AppBar:{
-		backgroundColor: theme.palette.type==="light" ?"#3f51b5" :"#212121"
+	AppBar: {
+		backgroundColor: theme.palette.type === "light" ? "#3f51b5" : "#212121"
 	},
 } ) )
 

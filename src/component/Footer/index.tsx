@@ -14,7 +14,7 @@ const useStyles = makeStyles( ( theme: Theme ) => createStyles( {
 		paddingRight: 0
 	},
 	copyright: {
-		marginTop: 10
+		marginTop: theme.spacing( 1 )
 	}
 } ) )
 
@@ -44,15 +44,12 @@ export default function Footer () {
 				component="footer"
 				className={classes.root}
 			>
-				{/* {myGitalk.use && (
-				 <Comment />
-				 )} */}
 				<Box component="div" className={classes.copyright}>
 					<Typography component="div" variant="body2">
 						{CopyRight}
 					</Typography>
 					<Typography component="div" variant="body2">
-						{"The source code of this site is stored on "}
+						{"The source code is stored on "}
 						<Link
 							component="button"
 							underline="none"
@@ -62,17 +59,6 @@ export default function Footer () {
 						</Link>
 						{"."}
 					</Typography>
-					{/* {Beian != false && (
-					 <Typography component="div" variant="body2" marginTop={5}>
-					 {"备案号："}
-					 <Link
-					 href="https://beian.miit.gov.cn"
-					 target="_blank"
-					 >
-					 {Beian}
-					 </Link>
-					 </Typography>
-					 )} */}
 				</Box>
 			</Container>
 		</>
