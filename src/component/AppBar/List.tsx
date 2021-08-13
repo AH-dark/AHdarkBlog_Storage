@@ -55,7 +55,7 @@ const useStyles = makeStyles((theme: Theme) =>
                 minHeight: "calc(var(--vh, 100vh) - 360px)",
             },
         },
-        iconBotton: {
+        iconButton: {
             marginLeft: theme.spacing(2),
         },
         Block: {
@@ -77,7 +77,7 @@ const useStyles = makeStyles((theme: Theme) =>
 
 export default function ListBar() {
     const classes = useStyles();
-    let history = useHistory();
+    const history = useHistory();
 
     return (
         <>
@@ -97,7 +97,7 @@ export default function ListBar() {
                         className={classes.ListItem}
                         onClick={() => history.push("/?")}
                     >
-                        <ListItemIcon className={classes.iconBotton}>
+                        <ListItemIcon className={classes.iconButton}>
                             <HomeRoundedIcon />
                         </ListItemIcon>
                         <Box component="div" className={classes.ButtonTextDiv}>
@@ -116,7 +116,7 @@ export default function ListBar() {
                         className={classes.ListItem}
                         onClick={() => history.push("/comment?")}
                     >
-                        <ListItemIcon className={classes.iconBotton}>
+                        <ListItemIcon className={classes.iconButton}>
                             <QuestionAnswerRoundedIcon />
                         </ListItemIcon>
                         <Box component="div" className={classes.ButtonTextDiv}>
@@ -137,7 +137,7 @@ export default function ListBar() {
                         className={classes.ListItem}
                         onClick={() => window.open(BlogURL, "_blank")}
                     >
-                        <ListItemIcon className={classes.iconBotton}>
+                        <ListItemIcon className={classes.iconButton}>
                             <DescriptionRoundedIcon />
                         </ListItemIcon>
                         <Box component="div" className={classes.ButtonTextDiv}>
@@ -161,7 +161,7 @@ export default function ListBar() {
                             )
                         }
                     >
-                        <ListItemIcon className={classes.iconBotton}>
+                        <ListItemIcon className={classes.iconButton}>
                             <GitHubIcon />
                         </ListItemIcon>
                         <Box component="div" className={classes.ButtonTextDiv}>

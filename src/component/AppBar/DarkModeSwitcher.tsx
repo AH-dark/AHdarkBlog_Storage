@@ -1,4 +1,4 @@
-import { Box, IconButton, Tooltip, useMediaQuery } from "@material-ui/core";
+import { Box, IconButton, Tooltip } from "@material-ui/core";
 
 import DarkModeIcon from "@material-ui/icons/Brightness4Rounded"; //Dark Mode
 import LightModeIcon from "@material-ui/icons/Brightness7Rounded"; //Light Mode
@@ -9,7 +9,7 @@ import { Dispatch, RootState } from "../../store";
 export default function DarkModeSwitcher_func(this: any) {
     const dispatch = useDispatch<Dispatch>();
     const themeOptions = useSelector((state: RootState) => state.theme);
-    useMediaQuery("(prefers-color-scheme: dark)");
+
     const changeThemeMode = useCallback(
         (mode: "light" | "dark") => dispatch.theme.changeThemeMode(mode),
         [dispatch]

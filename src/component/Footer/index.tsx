@@ -7,7 +7,7 @@ import {
     Typography,
 } from "@material-ui/core";
 import { makeStyles } from "@material-ui/styles";
-import moment from "moment";
+import day from "dayjs";
 import React from "react";
 
 const useStyles = makeStyles((theme: Theme) =>
@@ -29,7 +29,7 @@ const useStyles = makeStyles((theme: Theme) =>
 
 export default function Footer() {
     const classes = useStyles();
-    const Year = moment().get("year");
+    const Year = day().get("year");
 
     const CopyRight = (
         <>

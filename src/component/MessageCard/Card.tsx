@@ -13,6 +13,7 @@ import DescriptionRoundedIcon from "@material-ui/icons/DescriptionRounded";
 import { createStyles, makeStyles } from "@material-ui/styles";
 import React, { useState } from "react";
 import { Blog, UserName } from "../../config";
+import ContactDialog from "../ContactList";
 
 const useStyles = makeStyles((theme: Theme) =>
     createStyles({
@@ -84,7 +85,6 @@ export default function UserCard() {
         setContactSelectorOpen(false);
     };
 
-    // @ts-ignore
     return (
         <>
             <Card className={classes.root} id="card-root">
@@ -133,7 +133,10 @@ export default function UserCard() {
                     </Box>
                 </Box>
             </Card>
-            {/*<Content open={ContactSelectorOpen===true} onClose={handleContactSelectorClose()}/>*/}
+            <ContactDialog
+                open={ContactSelectorOpen}
+                onClose={handleContactSelectorClose}
+            />
         </>
     );
 }

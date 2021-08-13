@@ -1,4 +1,3 @@
-/* jshint esversion: 6 */
 import { Box, createStyles, Paper, Theme } from "@material-ui/core";
 import { makeStyles } from "@material-ui/styles";
 import "gitalk/dist/gitalk.css";
