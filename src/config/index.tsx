@@ -38,13 +38,13 @@ export const Beian: string | boolean = "京ICP备 2021024539号";
  * @param Content 联系方式
  */
 export const Blog: any = {
-	Name: "AHdark Blog",
-	Url: BlogURL,
-	Content: "https://ahdark.com/contact",
-	Describe: "一个搞技术的小蒟蒻"
-}
+    Name: "AHdark Blog",
+    Url: BlogURL,
+    Content: "https://ahdark.com/contact",
+    Describe: "一个搞技术的小蒟蒻",
+};
 
 export const GitHub: any = {
-	UserName: "AH-dark",
-	RepoName: "AHdarkBlog_Storage"
-}
+    UserName: "AH-dark",
+    RepoName: "AHdarkBlog_Storage",
+};
