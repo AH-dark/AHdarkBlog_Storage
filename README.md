@@ -1,10 +1,10 @@
-<center>
+<div style="text-align: center">
 
 # AHdark Blog Storage
 
 [![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FAH-dark%2FAHdarkBlog_Storage.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2FAH-dark%2FAHdarkBlog_Storage?ref=badge_shield)
 
-</center>
+</div>
 
 **Thanks for the help and advice from [@topjohncian](https://github.com/topjohncian), I was able to continue this
 project and add features.**
@@ -22,8 +22,8 @@ You can check the effect at <https://cdn.ahdark.com>
 
 **Please use the ```master``` branch**
 
-* Please check ```/src/config.tsx``` for basic configuration
-* Please check ```/src/gitalk.tsx``` for Gitalk Module configuration
+* Please check ```/src/config/index.tsx``` for basic configuration
+* Please check ```/src/config/gitalk.tsx``` for Gitalk Module configuration
 
 > I suggest you to modify the source code after Fork instead of the simple configuration file.
 
