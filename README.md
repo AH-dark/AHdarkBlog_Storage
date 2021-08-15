@@ -2,7 +2,12 @@
 
 # AHdark Blog Storage
 
-[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FAH-dark%2FAHdarkBlog_Storage.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2FAH-dark%2FAHdarkBlog_Storage?ref=badge_shield)
+  [![License](https://img.shields.io/github/license/AH-dark/AHdarkBlog_Storage)](https://github.com/AH-dark/AHdarkBlog_Storage/blob/AHdark/LICENSE)
+  [![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FAH-dark%2FAHdarkBlog_Storage.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2FAH-dark%2FAHdarkBlog_Storage?ref=badge_shield)
+  ![tag](https://img.shields.io/github/v/tag/AH-dark/AHdarkBlog_Storage)
+  
+  ![siteuptime](https://img.shields.io/uptimerobot/ratio/m788938501-e208eef42e7e9c417f3105a8)
+  
 
 </div>
 
